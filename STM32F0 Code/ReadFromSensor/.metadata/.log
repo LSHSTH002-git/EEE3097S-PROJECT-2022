@@ -1,0 +1,18 @@
+!SESSION 2022-09-27 11:00:16.010 -----------------------------------------------
+eclipse.buildId=Version 1.9.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ZA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-27 11:01:34.693
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-27 11:01:34.772
+!MESSAGE Log4j initialized with config file C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\STM32F0 Code\ReadFromSensor\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-27 11:01:38.020
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-27 11:04:13.643
+!MESSAGE Indexed 'SEN-15335' (21 sources, 81 headers) in 3.59 sec: 4,103 declarations; 21,426 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0078%)
