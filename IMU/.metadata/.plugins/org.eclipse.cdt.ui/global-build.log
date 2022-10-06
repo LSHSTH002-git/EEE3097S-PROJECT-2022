@@ -413,3 +413,2125 @@ arm-none-eabi-size   IMUData.elf
   47504	    488	   1936	  49928	   c308	IMUData.elf
 Finished building: default.size.stdout
  
+11:19:26 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+11:51:32 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:198:8: warning: unused variable 'buf102' [-Wunused-variable]
+  198 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:196:8: warning: unused variable 'buf' [-Wunused-variable]
+  196 |   char buf[1000];
+      |        ^~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47500	    488	   1936	  49924	   c304	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+11:51:42 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:198:8: warning: unused variable 'buf102' [-Wunused-variable]
+  198 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:196:8: warning: unused variable 'buf' [-Wunused-variable]
+  196 |   char buf[1000];
+      |        ^~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+11:51:48 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:17:32 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:198:8: warning: unused variable 'buf102' [-Wunused-variable]
+  198 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:196:8: warning: unused variable 'buf' [-Wunused-variable]
+  196 |   char buf[1000];
+      |        ^~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:17:44 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:21:58 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:199:8: warning: unused variable 'buf102' [-Wunused-variable]
+  199 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:197:8: warning: unused variable 'buf' [-Wunused-variable]
+  197 |   char buf[1000];
+      |        ^~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:22:21 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:200:8: warning: unused variable 'buf102' [-Wunused-variable]
+  200 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:198:8: warning: unused variable 'buf' [-Wunused-variable]
+  198 |   char buf[1000];
+      |        ^~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:22:26 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:22:30 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:26:56 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:199:8: warning: unused variable 'buf' [-Wunused-variable]
+  199 |   char buf[1000];
+      |        ^~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:30:44 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47708	    488	   1936	  50132	   c3d4	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:31:03 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47796	    488	   1936	  50220	   c42c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:31:08 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47796	    488	   1936	  50220	   c42c	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:32:22 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47808	    488	   1936	  50232	   c438	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:33:07 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47916	    488	   1936	  50340	   c4a4	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:33:13 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47916	    488	   1936	  50340	   c4a4	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:34:10 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47916	    488	   1936	  50340	   c4a4	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:34:16 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47916	    488	   1936	  50340	   c4a4	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:36:01 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:199:8: warning: unused variable 'buf' [-Wunused-variable]
+  199 |   char buf[1000];
+      |        ^~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:36:06 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:38:55 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:199:8: warning: unused variable 'message' [-Wunused-variable]
+  199 |   char message[] = "Vuyisa";
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47540	    488	   1936	  49964	   c32c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:39:30 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:199:8: warning: unused variable 'message' [-Wunused-variable]
+  199 |   char message[] = "Vuyisa";
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47540	    488	   1936	  49964	   c32c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:39:42 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47560	    488	   1936	  49984	   c340	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:39:48 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47560	    488	   1936	  49984	   c340	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:40:53 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:215:9: error: 'buffer' undeclared (first use in this function); did you mean 'buff2'?
+  215 |    aXor(buffer, message);
+      |         ^~~~~~
+      |         buff2
+../Core/Src/main.c:215:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+12:41:19 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:202:8: warning: unused variable 'buf102' [-Wunused-variable]
+  202 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47664	    488	   2936	  51088	   c790	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:41:49 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:202:8: warning: unused variable 'buf102' [-Wunused-variable]
+  202 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47676	    488	   2936	  51100	   c79c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:41:55 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47676	    488	   2936	  51100	   c79c	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:44:12 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:202:8: warning: unused variable 'buf102' [-Wunused-variable]
+  202 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:200:8: warning: unused variable 'message' [-Wunused-variable]
+  200 |   char message[] = "Vuyisa";
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47744	    488	   2936	  51168	   c7e0	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:44:20 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47744	    488	   2936	  51168	   c7e0	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:49:15 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47744	    488	   2936	  51168	   c7e0	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:49:21 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47744	    488	   2936	  51168	   c7e0	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:50:13 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:202:8: warning: unused variable 'buf102' [-Wunused-variable]
+  202 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:200:8: warning: unused variable 'message' [-Wunused-variable]
+  200 |   char message[] = "Vuyisa";
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47864	    488	   2936	  51288	   c858	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:50:20 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47864	    488	   2936	  51288	   c858	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:51:03 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:202:8: warning: unused variable 'buf102' [-Wunused-variable]
+  202 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:200:8: warning: unused variable 'message' [-Wunused-variable]
+  200 |   char message[] = "Vuyisa";
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.9.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: IMUData.elf section `.bss' will not fit in region `RAM'
+c:\st\stm32cubeide_1.9.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: region `RAM' overflowed by 4224 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: IMUData.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+12:51:07 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:202:8: warning: unused variable 'buf102' [-Wunused-variable]
+  202 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:200:8: warning: unused variable 'message' [-Wunused-variable]
+  200 |   char message[] = "Vuyisa";
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47864	    488	   2936	  51288	   c858	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:51:58 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:209:11: error: 'buff102' undeclared (first use in this function); did you mean 'buf102'?
+  209 |   sprintf(buff102,"\r\n Accelerometer Reading : X:%f Y:%f Z:%f\n",my_accel.x,my_accel.y,my_accel.z);
+      |           ^~~~~~~
+      |           buf102
+../Core/Src/main.c:209:11: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:202:8: warning: unused variable 'buf102' [-Wunused-variable]
+  202 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:200:8: warning: unused variable 'message' [-Wunused-variable]
+  200 |   char message[] = "Vuyisa";
+      |        ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+12:52:07 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:200:8: warning: unused variable 'message' [-Wunused-variable]
+  200 |   char message[] = "Vuyisa";
+      |        ^~~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47876	    488	   2936	  51300	   c864	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:52:14 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47876	    488	   2936	  51300	   c864	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:53:31 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47876	    488	   2936	  51300	   c864	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:53:37 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47876	    488	   2936	  51300	   c864	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:53:46 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47876	    488	   2936	  51300	   c864	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:54:05 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47876	    488	   2936	  51300	   c864	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:54:15 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47876	    488	   2936	  51300	   c864	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:57:18 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:211:10: error: 'buff102' undeclared (first use in this function); did you mean 'buf102'?
+  211 |   strcat(buff102,buf101);
+      |          ^~~~~~~
+      |          buf102
+../Core/Src/main.c:211:10: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+12:57:28 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47840	    488	   2936	  51264	   c840	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:57:35 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47840	    488	   2936	  51264	   c840	IMUData.elf
+Finished building: default.size.stdout
+ 
+12:57:41 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47916	    488	   2936	  51340	   c88c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+12:57:48 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47916	    488	   2936	  51340	   c88c	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:00:12 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47888	    488	   2936	  51312	   c870	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:00:19 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47888	    488	   2936	  51312	   c870	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:03:32 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47904	    488	   2936	  51328	   c880	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:03:38 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47904	    488	   2936	  51328	   c880	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:07:19 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:07:27 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:09:06 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:09:29 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:09:34 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:10:12 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:10:39 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:10:41 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:11:27 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:11:32 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:12:11 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:12:16 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:12:55 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:13:01 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:13:31 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:13:37 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47608	    488	   2936	  51032	   c758	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:15:34 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47620	    488	   2936	  51044	   c764	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:15:39 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47620	    488	   2936	  51044	   c764	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:17:42 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47620	    488	   2936	  51044	   c764	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:25:23 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:8: warning: unused variable 'buffz' [-Wunused-variable]
+  207 |   char buffz[256];
+      |        ^~~~~
+../Core/Src/main.c:206:8: warning: unused variable 'buffy' [-Wunused-variable]
+  206 |   char buffy[256];
+      |        ^~~~~
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47868	    488	   2936	  51292	   c85c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:25:28 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47868	    488	   2936	  51292	   c85c	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:29:12 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:215:11: error: 'buffx' undeclared (first use in this function); did you mean 'buffz'?
+  215 |   sprintf(buffx,"%f",my_accel.x);
+      |           ^~~~~
+      |           buffz
+../Core/Src/main.c:215:11: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:207:8: warning: unused variable 'buffz' [-Wunused-variable]
+  207 |   char buffz[256];
+      |        ^~~~~
+../Core/Src/main.c:206:8: warning: unused variable 'buffy' [-Wunused-variable]
+  206 |   char buffy[256];
+      |        ^~~~~
+../Core/Src/main.c:205:28: warning: unused variable 'Dencrypt_buffx' [-Wunused-variable]
+  205 |   char Encrypt_buffx[256], Dencrypt_buffx[256] ;
+      |                            ^~~~~~~~~~~~~~
+../Core/Src/main.c:205:8: warning: unused variable 'Encrypt_buffx' [-Wunused-variable]
+  205 |   char Encrypt_buffx[256], Dencrypt_buffx[256] ;
+      |        ^~~~~~~~~~~~~
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:29:29 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47508	    488	   1936	  49932	   c30c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:29:37 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47508	    488	   1936	  49932	   c30c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:29:40 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47508	    488	   1936	  49932	   c30c	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:29:45 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47508	    488	   1936	  49932	   c30c	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:31:21 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:219:16: warning: character constant too long for its type
+  219 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:219:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:220:9: warning: unused variable 'l1' [-Wunused-variable]
+  220 |     int l1 = strlen(buff2);
+      |         ^~
+../Core/Src/main.c:219:10: warning: unused variable 'key' [-Wunused-variable]
+  219 |     char key = 'password';
+      |          ^~~
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47544	    488	   1936	  49968	   c330	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:31:52 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:219:16: warning: character constant too long for its type
+  219 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:219:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:222:24: error: 'len' undeclared (first use in this function)
+  222 |      for(int i = 0; i< len; i++){
+      |                        ^~~
+../Core/Src/main.c:222:24: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:223:22: error: 'message' undeclared (first use in this function)
+  223 |          buffer[i] = message[i] ^ xorKey;
+      |                      ^~~~~~~
+../Core/Src/main.c:223:35: error: 'xorKey' undeclared (first use in this function)
+  223 |          buffer[i] = message[i] ^ xorKey;
+      |                                   ^~~~~~
+../Core/Src/main.c:220:9: warning: unused variable 'l1' [-Wunused-variable]
+  220 |     int l1 = strlen(buff2);
+      |         ^~
+../Core/Src/main.c:219:10: warning: unused variable 'key' [-Wunused-variable]
+  219 |     char key = 'password';
+      |          ^~~
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:32:12 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:219:16: warning: character constant too long for its type
+  219 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:219:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:223:22: error: 'message' undeclared (first use in this function)
+  223 |          buffer[i] = message[i] ^ key;
+      |                      ^~~~~~~
+../Core/Src/main.c:223:22: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:32:15 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:219:16: warning: character constant too long for its type
+  219 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:219:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:223:22: error: 'message' undeclared (first use in this function)
+  223 |          buffer[i] = message[i] ^ key;
+      |                      ^~~~~~~
+../Core/Src/main.c:223:22: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:32:24 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:219:16: warning: character constant too long for its type
+  219 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:219:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47656	    488	   2936	  51080	   c788	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:32:30 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47656	    488	   2936	  51080	   c788	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:35:23 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:219:16: warning: character constant too long for its type
+  219 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:219:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:225:25: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  225 |      char decrept_key = "password";
+      |                         ^~~~~~~~~~
+../Core/Src/main.c:234:37: error: 'd_key' undeclared (first use in this function)
+  234 |              buffer[i] = buff2[i] ^ d_key;
+      |                                     ^~~~~
+../Core/Src/main.c:234:37: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:35:37 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:219:16: warning: character constant too long for its type
+  219 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:219:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:225:25: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  225 |      char decrept_key = "password";
+      |                         ^~~~~~~~~~
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47836	    488	   2936	  51260	   c83c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:36:59 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:219:16: warning: character constant too long for its type
+  219 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:219:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:225:25: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  225 |      char decrept_key = "password";
+      |                         ^~~~~~~~~~
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  48044	    488	   2936	  51468	   c90c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:37:05 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48044	    488	   2936	  51468	   c90c	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:38:34 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:217:16: warning: character constant too long for its type
+  217 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:217:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:223:25: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  223 |      char decrept_key = "password";
+      |                         ^~~~~~~~~~
+../Core/Src/main.c:199:8: warning: unused variable 'buf102' [-Wunused-variable]
+  199 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  48044	    488	   2936	  51468	   c90c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:38:39 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48044	    488	   2936	  51468	   c90c	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:39:14 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:217:16: warning: character constant too long for its type
+  217 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:217:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:223:25: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  223 |      char decrept_key = "password";
+      |                         ^~~~~~~~~~
+../Core/Src/main.c:199:8: warning: unused variable 'buf102' [-Wunused-variable]
+  199 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  48068	    488	   1936	  50492	   c53c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:40:36 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:217:16: warning: character constant too long for its type
+  217 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:217:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:223:25: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  223 |      char decrept_key = "password";
+      |                         ^~~~~~~~~~
+../Core/Src/main.c:231:29: error: 'buff2' undeclared (first use in this function); did you mean 'buff'?
+  231 |          int d_len = strlen(buff2);
+      |                             ^~~~~
+      |                             buff
+../Core/Src/main.c:231:29: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:199:8: warning: unused variable 'buf102' [-Wunused-variable]
+  199 |   char buf102[256];
+      |        ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:40:45 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:217:16: warning: character constant too long for its type
+  217 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:217:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:223:25: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  223 |      char decrept_key = "password";
+      |                         ^~~~~~~~~~
+../Core/Src/main.c:199:8: warning: unused variable 'buf102' [-Wunused-variable]
+  199 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  48048	    488	   1936	  50472	   c528	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:40:51 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48048	    488	   1936	  50472	   c528	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:41:08 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:217:16: warning: character constant too long for its type
+  217 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:217:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:223:25: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  223 |      char decrept_key = "password";
+      |                         ^~~~~~~~~~
+../Core/Src/main.c:199:8: warning: unused variable 'buf102' [-Wunused-variable]
+  199 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  48048	    488	   1936	  50472	   c528	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:42:22 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:217:16: warning: character constant too long for its type
+  217 |     char key = 'password';
+      |                ^~~~~~~~~~
+../Core/Src/main.c:217:16: warning: unsigned conversion from 'int' to 'char' changes value from '2003792484' to '100' [-Woverflow]
+../Core/Src/main.c:223:25: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  223 |      char decrept_key = "password";
+      |                         ^~~~~~~~~~
+../Core/Src/main.c:199:8: warning: unused variable 'buf102' [-Wunused-variable]
+  199 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  48036	    488	   1936	  50460	   c51c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:42:27 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48036	    488	   1936	  50460	   c51c	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:46:26 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:223:25: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  223 |      char decrept_key = "A";
+      |                         ^~~
+../Core/Src/main.c:231:14: warning: unused variable 'd_len' [-Wunused-variable]
+  231 |          int d_len = strlen(buf101);
+      |              ^~~~~
+../Core/Src/main.c:223:11: warning: unused variable 'decrept_key' [-Wunused-variable]
+  223 |      char decrept_key = "A";
+      |           ^~~~~~~~~~~
+../Core/Src/main.c:200:8: warning: unused variable 'buff' [-Wunused-variable]
+  200 |   char buff[1000];
+      |        ^~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  48000	    488	   1936	  50424	   c4f8	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:46:33 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48000	    488	   1936	  50424	   c4f8	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:46:55 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48000	    488	   1936	  50424	   c4f8	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:47:46 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48000	    488	   1936	  50424	   c4f8	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:51:05 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47588	    488	   1936	  50012	   c35c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:51:11 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47508	    488	   1936	  49932	   c30c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:51:16 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47508	    488	   1936	  49932	   c30c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:51:21 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47508	    488	   1936	  49932	   c30c	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:51:58 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47508	    488	   1936	  49932	   c30c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:52:03 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47508	    488	   1936	  49932	   c30c	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:54:47 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47612	    488	   2936	  51036	   c75c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:55:08 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:217:17: error: 'huat1' undeclared (first use in this function); did you mean 'huart1'?
+  217 |   debugPrintln(&huat1,buffer);
+      |                 ^~~~~
+      |                 huart1
+../Core/Src/main.c:217:17: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:55:14 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47624	    488	   2936	  51048	   c768	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+13:55:20 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47624	    488	   2936	  51048	   c768	IMUData.elf
+Finished building: default.size.stdout
+ 
+13:57:46 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47588	    488	   2936	  51012	   c744	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:00:13 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47636	    488	   2936	  51060	   c774	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:00:23 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47636	    488	   2936	  51060	   c774	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:02:25 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47636	    488	   2936	  51060	   c774	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:02:42 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47636	    488	   2936	  51060	   c774	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:04:53 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47624	    488	   2936	  51048	   c768	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:04:58 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47624	    488	   2936	  51048	   c768	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:13:41 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47636	    488	   2936	  51060	   c774	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:14:06 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47636	    488	   2936	  51060	   c774	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:14:19 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47636	    488	   2936	  51060	   c774	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:15:25 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47636	    488	   2936	  51060	   c774	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:15:37 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47636	    488	   2936	  51060	   c774	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:15:42 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47636	    488	   2936	  51060	   c774	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:16:32 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47496	    488	   1936	  49920	   c300	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:16:40 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47496	    488	   1936	  49920	   c300	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:17:09 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:17:17 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:18:06 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47632	    488	   2936	  51056	   c770	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:18:16 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47632	    488	   2936	  51056	   c770	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:19:16 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47624	    488	   2936	  51048	   c768	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:19:21 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47624	    488	   2936	  51048	   c768	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:20:02 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47632	    488	   2936	  51056	   c770	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:20:57 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:21:03 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47504	    488	   1936	  49928	   c308	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:22:13 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47624	    488	   2936	  51048	   c768	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:22:17 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47624	    488	   2936	  51048	   c768	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:22:50 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47624	    488	   2936	  51048	   c768	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:22:55 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47624	    488	   2936	  51048	   c768	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:26:37 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47792	    488	   2936	  51216	   c810	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:26:43 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47792	    488	   2936	  51216	   c810	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:27:57 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:224:24: error: expected ';' before ']' token
+  224 |    buffer[i] = buff2[i]]^i;
+      |                        ^
+      |                        ;
+../Core/Src/main.c:224:24: error: expected statement before ']' token
+../Core/Src/main.c:224:25: error: expected expression before '^' token
+  224 |    buffer[i] = buff2[i]]^i;
+      |                         ^
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:28:01 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47832	    488	   2936	  51256	   c838	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:33:59 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47820	    488	   2936	  51244	   c82c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:34:07 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47820	    488	   2936	  51244	   c82c	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:35:46 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47836	    488	   2936	  51260	   c83c	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:35:52 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47836	    488	   2936	  51260	   c83c	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:42:04 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47836	    488	   2936	  51260	   c83c	IMUData.elf
+Finished building: default.size.stdout
+ 
+14:42:26 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47420	    488	   1936	  49844	   c2b4	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:42:32 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47420	    488	   1936	  49844	   c2b4	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:42:43 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-size   IMUData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  47420	    488	   1936	  49844	   c2b4	IMUData.elf
+Finished building: default.size.stdout
+ 

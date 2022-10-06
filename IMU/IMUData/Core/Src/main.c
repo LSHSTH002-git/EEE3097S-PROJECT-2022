@@ -24,7 +24,9 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "icm20948.h"
+#include "xor_algo.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,6 +58,7 @@ SPI_HandleTypeDef hspi2;
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
+char buffer[1000];
 
 /* USER CODE END PV */
 
@@ -129,6 +132,7 @@ void icm20948_accel_calibration();
 void icm20948_gyro_full_scale_select(gyro_full_scale full_scale);
 void icm20948_accel_full_scale_select(accel_full_scale full_scale);
 
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -193,22 +197,22 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 	while (1)
 	{
-		char buf[1000];
 		char buf101[256];
 		char buf102[256];
-		char buff2[1000];
+		char buff2[512];
 
 		icm20948_gyro_read_dps(&my_gyro);
 		icm20948_accel_read_g(&my_accel);
+
 		debugPrintln(&huart1,"-------------------------------IMU Data-----------------------------");
 
-	  sprintf(buff2,"\r\n Accelerometer Reading : X:%f Y:%f Z:%f\n",my_accel.x,my_accel.y,my_accel.z);
+		sprintf(buff2,"\r\n Accelerometer Reading : X:%f Y:%f Z:%f\n",my_accel.x,my_accel.y,my_accel.z);
 
-	  sprintf(buf101,"\r\n Gyrometer Reading     : X:%f Y:%f Z:%f\n",my_gyro.x,my_gyro.y,my_gyro.z);
-	  strcat(buff2,buf101);
-	  debugPrintln(&huart1,(char *)buff2);
-	    debugPrintln(&huart1,"--------------------------------------------------------------------");
-	 HAL_Delay(1000);
+		sprintf(buf101,"\r\n Gyroscope Reading     : X:%f Y:%f Z:%f\n",my_gyro.x,my_gyro.y,my_gyro.z);
+		strcat(buff2,buf101);
+
+		debugPrintln(&huart1,(char *)buff2);
+		HAL_Delay(5000);
 
     /* USER CODE END WHILE */
 
