@@ -233,7 +233,6 @@ int main(void)
 
 	    }
 	    debugPrintln(&huart1,buffer);
-	    HAL_Delay(5000);
 
     /* USER CODE END WHILE */
 
