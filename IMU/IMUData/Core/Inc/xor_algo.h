@@ -5,26 +5,26 @@
 #include <stdlib.h>
 #include <string.h>
 
-void aXor(char buffer[], char message[]){
+void aXor(char buffer[], char compressed[]){
     
     char xorKey = 'A';
 
-    int len = strlen(message);
+    int len = strlen(compressed);
 
     for(int i = 0; i< len; i++){
-        buffer[i] = message[i] ^ xorKey;
+        buffer[i] = compressed[i] ^ xorKey;
     }
 
 
 }
 
-void dXor(char buffer[], char message[]){
-    char xorKey = 'A';
+void dXor(char buffer[], char Encrypted[]){
+    char xorKey = 'A';//this is the password, if wrong then algorithm is doomed.
 
-    int len = strlen(message);
+    int len = strlen(Encrypted);
 
     for(int i = 0; i< len; i++){
-        buffer[i] = message[i] ^ xorKey;
+        buffer[i] = Encrypted[i] ^ xorKey;
     }
 }
 

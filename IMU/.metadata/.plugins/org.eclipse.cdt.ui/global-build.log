@@ -2535,3 +2535,138 @@ arm-none-eabi-size   IMUData.elf
   47420	    488	   1936	  49844	   c2b4	IMUData.elf
 Finished building: default.size.stdout
  
+14:53:04 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47420	    488	   1936	  49844	   c2b4	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 
+14:54:53 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:8: warning: unused variable 'buf102' [-Wunused-variable]
+  201 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c: In function 'Encryption':
+../Core/Src/main.c:461:7: warning: passing argument 1 of 'aXor' makes pointer from integer without a cast [-Wint-conversion]
+  461 |  aXor(compressedData);
+      |       ^~~~~~~~~~~~~~
+      |       |
+      |       char
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:16: note: expected 'char *' but argument is of type 'char'
+    8 | void aXor(char buffer[], char compressed[]){
+      |           ~~~~~^~~~~~~~
+../Core/Src/main.c:461:2: error: too few arguments to function 'aXor'
+  461 |  aXor(compressedData);
+      |  ^~~~
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:6: note: declared here
+    8 | void aXor(char buffer[], char compressed[]){
+      |      ^~~~
+../Core/Src/main.c: In function 'Decryption':
+../Core/Src/main.c:465:7: warning: passing argument 1 of 'aXor' makes pointer from integer without a cast [-Wint-conversion]
+  465 |  aXor(compressedData);
+      |       ^~~~~~~~~~~~~~
+      |       |
+      |       char
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:16: note: expected 'char *' but argument is of type 'char'
+    8 | void aXor(char buffer[], char compressed[]){
+      |           ~~~~~^~~~~~~~
+../Core/Src/main.c:465:2: error: too few arguments to function 'aXor'
+  465 |  aXor(compressedData);
+      |  ^~~~
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:6: note: declared here
+    8 | void aXor(char buffer[], char compressed[]){
+      |      ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:55:42 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:200:8: warning: unused variable 'buf102' [-Wunused-variable]
+  200 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c: In function 'Encryption':
+../Core/Src/main.c:460:14: warning: passing argument 2 of 'aXor' makes pointer from integer without a cast [-Wint-conversion]
+  460 |  aXor(buffer,compressedData);
+      |              ^~~~~~~~~~~~~~
+      |              |
+      |              char
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:31: note: expected 'char *' but argument is of type 'char'
+    8 | void aXor(char buffer[], char compressed[]){
+      |                          ~~~~~^~~~~~~~~~~~
+../Core/Src/main.c: In function 'Decryption':
+../Core/Src/main.c:464:7: warning: passing argument 1 of 'aXor' makes pointer from integer without a cast [-Wint-conversion]
+  464 |  aXor(compressedData);
+      |       ^~~~~~~~~~~~~~
+      |       |
+      |       char
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:16: note: expected 'char *' but argument is of type 'char'
+    8 | void aXor(char buffer[], char compressed[]){
+      |           ~~~~~^~~~~~~~
+../Core/Src/main.c:464:2: error: too few arguments to function 'aXor'
+  464 |  aXor(compressedData);
+      |  ^~~~
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:6: note: declared here
+    8 | void aXor(char buffer[], char compressed[]){
+      |      ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:55:49 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:200:8: warning: unused variable 'buf102' [-Wunused-variable]
+  200 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c: In function 'Encryption':
+../Core/Src/main.c:460:14: warning: passing argument 2 of 'aXor' makes pointer from integer without a cast [-Wint-conversion]
+  460 |  aXor(buffer,compressedData);
+      |              ^~~~~~~~~~~~~~
+      |              |
+      |              char
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:31: note: expected 'char *' but argument is of type 'char'
+    8 | void aXor(char buffer[], char compressed[]){
+      |                          ~~~~~^~~~~~~~~~~~
+../Core/Src/main.c: In function 'Decryption':
+../Core/Src/main.c:464:14: warning: passing argument 2 of 'aXor' makes pointer from integer without a cast [-Wint-conversion]
+  464 |  aXor(buffer,compressedData);
+      |              ^~~~~~~~~~~~~~
+      |              |
+      |              char
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:31: note: expected 'char *' but argument is of type 'char'
+    8 | void aXor(char buffer[], char compressed[]){
+      |                          ~~~~~^~~~~~~~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47420	    488	   1936	  49844	   c2b4	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 

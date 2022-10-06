@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000028  00000000  00000000  000201e0  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0000d8c0  00000000  00000000  00020208  2**0
+ 12 .debug_info   0000d8ee  00000000  00000000  00020208  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00001cdc  00000000  00000000  0002dac8  2**0
+ 13 .debug_abbrev 00001cdc  00000000  00000000  0002daf6  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000cb8  00000000  00000000  0002f7a8  2**3
+ 14 .debug_aranges 00000cc8  00000000  00000000  0002f7d8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_ranges 00000bf0  00000000  00000000  00030460  2**3
+ 15 .debug_ranges 00000c00  00000000  00000000  000304a0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  0001323b  00000000  00000000  00031050  2**0
+ 16 .debug_macro  0001323b  00000000  00000000  000310a0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000f20f  00000000  00000000  0004428b  2**0
+ 17 .debug_line   0000f243  00000000  00000000  000442db  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0006e5da  00000000  00000000  0005349a  2**0
+ 18 .debug_str    0006e60c  00000000  00000000  0005351e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000050  00000000  00000000  000c1a74  2**0
+ 19 .comment      00000050  00000000  00000000  000c1b2a  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000043f4  00000000  00000000  000c1ac4  2**2
+ 20 .debug_frame  00004434  00000000  00000000  000c1b7c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -5965,8 +5965,8 @@ static void MX_GPIO_Init(void)
  8002dd0:	48000800 	.word	0x48000800
 
 08002dd4 <icm20948_init>:
-
 /* Static Functions */
+
 
 /* Main Functions */
 void icm20948_init()
@@ -6029,6 +6029,9 @@ void icm20948_init()
  8002e32:	bd80      	pop	{r7, pc}
 
 08002e34 <ak09916_init>:
+{
+	aXor(buffer,compressedData);
+}
 
 void ak09916_init()
 {
