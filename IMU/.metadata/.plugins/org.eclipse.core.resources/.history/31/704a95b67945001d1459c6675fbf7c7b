@@ -57,7 +57,7 @@ SPI_HandleTypeDef hspi2;
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-
+char buffer[1000];
 
 /* USER CODE END PV */
 
@@ -199,7 +199,6 @@ int main(void)
 		char buf101[256];
 		char buf102[256];
 		char buff2[512];
-		char buffer[512];
 
 		icm20948_gyro_read_dps(&my_gyro);
 		icm20948_accel_read_g(&my_accel);
@@ -213,26 +212,11 @@ int main(void)
 		debugPrintln(&huart1,"-------------------------------------------------------------------");
 		debugPrintln(&huart1,"-------------------------------Encryption -------------------------");
 		//call the encryption function, input vuyisa's compressed data
-	    char xorKey = 'A';
-
-	    int len = strlen(buff2);
-
-	    for(int i = 0; i< len; i++){
-	        buffer[i] = buff2[i] ^ xorKey;
-
-	    }
-	    debugPrintln(&huart1,buffer);
 
 		debugPrintln(&huart1,"-------------------------------Decryption -------------------------");
 		//call the Decryption function, input vuyisa's compressed data
 
-	    int len2 = strlen(buffer);
-
-	    for(int i = 0; i< len2; i++){
-	        buffer[i] = buffer[i] ^ xorKey;
-
-	    }
-	    debugPrintln(&huart1,buffer);
+		HAL_Delay(5000);
 
     /* USER CODE END WHILE */
 
@@ -476,7 +460,7 @@ void icm20948_init()
 	icm20948_gyro_full_scale_select(_2000dps);
 	icm20948_accel_full_scale_select(_16g);
 }
-/*void Encryption(char compressedData)
+void Encryption(char compressedData)
 {
 	aXor(buffer,compressedData);
 }
@@ -484,7 +468,7 @@ void Decryption(char compressedData)
 {
 	aXor(buffer,compressedData);
 }
-*/
+
 void ak09916_init()
 {
 	icm20948_i2c_master_reset();

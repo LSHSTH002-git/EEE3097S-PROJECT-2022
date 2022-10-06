@@ -220,19 +220,10 @@ int main(void)
 	    for(int i = 0; i< len; i++){
 	        buffer[i] = buff2[i] ^ xorKey;
 
-	    }
-	    debugPrintln(&huart1,buffer);
-
 		debugPrintln(&huart1,"-------------------------------Decryption -------------------------");
 		//call the Decryption function, input vuyisa's compressed data
 
-	    int len2 = strlen(buffer);
-
-	    for(int i = 0; i< len2; i++){
-	        buffer[i] = buffer[i] ^ xorKey;
-
-	    }
-	    debugPrintln(&huart1,buffer);
+		HAL_Delay(5000);
 
     /* USER CODE END WHILE */
 
@@ -476,7 +467,7 @@ void icm20948_init()
 	icm20948_gyro_full_scale_select(_2000dps);
 	icm20948_accel_full_scale_select(_16g);
 }
-/*void Encryption(char compressedData)
+void Encryption(char compressedData)
 {
 	aXor(buffer,compressedData);
 }
@@ -484,7 +475,7 @@ void Decryption(char compressedData)
 {
 	aXor(buffer,compressedData);
 }
-*/
+
 void ak09916_init()
 {
 	icm20948_i2c_master_reset();

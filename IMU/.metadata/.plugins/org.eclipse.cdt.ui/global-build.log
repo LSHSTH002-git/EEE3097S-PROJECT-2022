@@ -2670,3 +2670,324 @@ Finished building: default.size.stdout
  
 Finished building: IMUData.list
  
+15:20:57 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:202:8: warning: variable 'buffer' set but not used [-Wunused-but-set-variable]
+  202 |   char buffer[512];
+      |        ^~~~~~
+../Core/Src/main.c:200:8: warning: unused variable 'buf102' [-Wunused-variable]
+  200 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c:282:13: error: invalid storage class for function 'MX_I2C2_Init'
+  282 | static void MX_I2C2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:330:13: error: invalid storage class for function 'MX_SPI2_Init'
+  330 | static void MX_SPI2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:370:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+  370 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:405:13: error: invalid storage class for function 'MX_GPIO_Init'
+  405 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'Encryption':
+../Core/Src/main.c:472:7: error: 'buffer' undeclared (first use in this function); did you mean 'setbuffer'?
+  472 |  aXor(buffer,compressedData);
+      |       ^~~~~~
+      |       setbuffer
+../Core/Src/main.c:472:7: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:472:14: warning: passing argument 2 of 'aXor' makes pointer from integer without a cast [-Wint-conversion]
+  472 |  aXor(buffer,compressedData);
+      |              ^~~~~~~~~~~~~~
+      |              |
+      |              char
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:31: note: expected 'char *' but argument is of type 'char'
+    8 | void aXor(char buffer[], char compressed[]){
+      |                          ~~~~~^~~~~~~~~~~~
+../Core/Src/main.c: In function 'Decryption':
+../Core/Src/main.c:476:7: error: 'buffer' undeclared (first use in this function); did you mean 'setbuffer'?
+  476 |  aXor(buffer,compressedData);
+      |       ^~~~~~
+      |       setbuffer
+../Core/Src/main.c:476:14: warning: passing argument 2 of 'aXor' makes pointer from integer without a cast [-Wint-conversion]
+  476 |  aXor(buffer,compressedData);
+      |              ^~~~~~~~~~~~~~
+      |              |
+      |              char
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:31: note: expected 'char *' but argument is of type 'char'
+    8 | void aXor(char buffer[], char compressed[]){
+      |                          ~~~~~^~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:843:13: error: invalid storage class for function 'cs_high'
+  843 | static void cs_high()
+      |             ^~~~~~~
+../Core/Src/main.c:848:13: error: invalid storage class for function 'cs_low'
+  848 | static void cs_low()
+      |             ^~~~~~
+../Core/Src/main.c:853:13: error: invalid storage class for function 'select_user_bank'
+  853 | static void select_user_bank(userbank ub)
+      |             ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:864:16: error: invalid storage class for function 'read_single_icm20948_reg'
+  864 | static uint8_t read_single_icm20948_reg(userbank ub, uint8_t reg)
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:878:13: error: invalid storage class for function 'write_single_icm20948_reg'
+  878 | static void write_single_icm20948_reg(userbank ub, uint8_t reg, uint8_t val)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:891:17: error: invalid storage class for function 'read_multiple_icm20948_reg'
+  891 | static uint8_t *read_multiple_icm20948_reg(userbank ub, uint8_t reg, uint8_t len)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:905:13: error: invalid storage class for function 'write_multiple_icm20948_reg'
+  905 | static void write_multiple_icm20948_reg(userbank ub, uint8_t reg, uint8_t *val, uint8_t len)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:916:16: error: invalid storage class for function 'read_single_ak09916_reg'
+  916 | static uint8_t read_single_ak09916_reg(uint8_t reg)
+      |                ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:926:13: error: invalid storage class for function 'write_single_ak09916_reg'
+  926 | static void write_single_ak09916_reg(uint8_t reg, uint8_t val)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:934:17: error: invalid storage class for function 'read_multiple_ak09916_reg'
+  934 | static uint8_t *read_multiple_ak09916_reg(uint8_t reg, uint8_t len)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:960:1: error: expected declaration or statement at end of input
+  960 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:66:13: warning: 'MX_GPIO_Init' used but never defined
+   66 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:67:13: warning: 'MX_I2C2_Init' used but never defined
+   67 | static void MX_I2C2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:68:13: warning: 'MX_SPI2_Init' used but never defined
+   68 | static void MX_SPI2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:69:13: warning: 'MX_USART1_UART_Init' used but never defined
+   69 | static void MX_USART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:72:13: warning: 'cs_high' declared 'static' but never defined [-Wunused-function]
+   72 | static void cs_high();
+      |             ^~~~~~~
+../Core/Src/main.c:73:13: warning: 'cs_low' declared 'static' but never defined [-Wunused-function]
+   73 | static void cs_low();
+      |             ^~~~~~
+../Core/Src/main.c:74:13: warning: 'select_user_bank' declared 'static' but never defined [-Wunused-function]
+   74 | static void select_user_bank(userbank ub);
+      |             ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:75:16: warning: 'read_single_icm20948_reg' used but never defined
+   75 | static uint8_t read_single_icm20948_reg(userbank ub, uint8_t reg);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:76:13: warning: 'write_single_icm20948_reg' used but never defined
+   76 | static void write_single_icm20948_reg(userbank ub, uint8_t reg, uint8_t val);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:77:17: warning: 'read_multiple_icm20948_reg' used but never defined
+   77 | static uint8_t *read_multiple_icm20948_reg(userbank ub, uint8_t reg, uint8_t len);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:78:13: warning: 'write_multiple_icm20948_reg' used but never defined
+   78 | static void write_multiple_icm20948_reg(userbank ub, uint8_t reg, uint8_t *val, uint8_t len);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:79:16: warning: 'read_single_ak09916_reg' used but never defined
+   79 | static uint8_t read_single_ak09916_reg(uint8_t reg);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:80:13: warning: 'write_single_ak09916_reg' used but never defined
+   80 | static void write_single_ak09916_reg(uint8_t reg, uint8_t val);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:81:17: warning: 'read_multiple_ak09916_reg' used but never defined
+   81 | static uint8_t *read_multiple_ak09916_reg(uint8_t reg, uint8_t len);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:951:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  951 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:934:17: warning: 'read_multiple_ak09916_reg' defined but not used [-Wunused-function]
+  934 | static uint8_t *read_multiple_ak09916_reg(uint8_t reg, uint8_t len)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:926:13: warning: 'write_single_ak09916_reg' defined but not used [-Wunused-function]
+  926 | static void write_single_ak09916_reg(uint8_t reg, uint8_t val)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:916:16: warning: 'read_single_ak09916_reg' defined but not used [-Wunused-function]
+  916 | static uint8_t read_single_ak09916_reg(uint8_t reg)
+      |                ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:905:13: warning: 'write_multiple_icm20948_reg' defined but not used [-Wunused-function]
+  905 | static void write_multiple_icm20948_reg(userbank ub, uint8_t reg, uint8_t *val, uint8_t len)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:815:6: warning: 'icm20948_accel_full_scale_select' defined but not used [-Wunused-function]
+  815 | void icm20948_accel_full_scale_select(accel_full_scale full_scale)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:788:6: warning: 'icm20948_gyro_full_scale_select' defined but not used [-Wunused-function]
+  788 | void icm20948_gyro_full_scale_select(gyro_full_scale full_scale)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:730:6: warning: 'icm20948_accel_calibration' defined but not used [-Wunused-function]
+  730 | void icm20948_accel_calibration()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:698:6: warning: 'icm20948_gyro_calibration' defined but not used [-Wunused-function]
+  698 | void icm20948_gyro_calibration()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:692:6: warning: 'ak09916_operation_mode_setting' defined but not used [-Wunused-function]
+  692 | void ak09916_operation_mode_setting(operation_mode mode)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:683:6: warning: 'icm20948_accel_sample_rate_divider' defined but not used [-Wunused-function]
+  683 | void icm20948_accel_sample_rate_divider(uint16_t divider)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:678:6: warning: 'icm20948_gyro_sample_rate_divider' defined but not used [-Wunused-function]
+  678 | void icm20948_gyro_sample_rate_divider(uint8_t divider)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:670:6: warning: 'icm20948_accel_low_pass_filter' defined but not used [-Wunused-function]
+  670 | void icm20948_accel_low_pass_filter(uint8_t config)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:662:6: warning: 'icm20948_gyro_low_pass_filter' defined but not used [-Wunused-function]
+  662 | void icm20948_gyro_low_pass_filter(uint8_t config)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:657:6: warning: 'icm20948_odr_align_enable' defined but not used [-Wunused-function]
+  657 | void icm20948_odr_align_enable()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:649:6: warning: 'icm20948_clock_source' defined but not used [-Wunused-function]
+  649 | void icm20948_clock_source(uint8_t source)
+      |      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:641:6: warning: 'icm20948_i2c_master_clk_frq' defined but not used [-Wunused-function]
+  641 | void icm20948_i2c_master_clk_frq(uint8_t config)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:632:6: warning: 'icm20948_i2c_master_enable' defined but not used [-Wunused-function]
+  632 | void icm20948_i2c_master_enable()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:624:6: warning: 'icm20948_i2c_master_reset' defined but not used [-Wunused-function]
+  624 | void icm20948_i2c_master_reset()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:616:6: warning: 'icm20948_spi_slave_enable' defined but not used [-Wunused-function]
+  616 | void icm20948_spi_slave_enable()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:607:6: warning: 'icm20948_sleep' defined but not used [-Wunused-function]
+  607 | void icm20948_sleep()
+      |      ^~~~~~~~~~~~~~
+../Core/Src/main.c:598:6: warning: 'icm20948_wakeup' defined but not used [-Wunused-function]
+  598 | void icm20948_wakeup()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:592:6: warning: 'ak09916_soft_reset' defined but not used [-Wunused-function]
+  592 | void ak09916_soft_reset()
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:586:6: warning: 'icm20948_device_reset' defined but not used [-Wunused-function]
+  586 | void icm20948_device_reset()
+      |      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:576:6: warning: 'ak09916_who_am_i' defined but not used [-Wunused-function]
+  576 | bool ak09916_who_am_i()
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:566:6: warning: 'icm20948_who_am_i' defined but not used [-Wunused-function]
+  566 | bool icm20948_who_am_i()
+      |      ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:551:6: warning: 'ak09916_mag_read_uT' defined but not used [-Wunused-function]
+  551 | bool ak09916_mag_read_uT(axises *data)
+      |      ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:542:6: warning: 'icm20948_accel_read_g' defined but not used [-Wunused-function]
+  542 | void icm20948_accel_read_g(axises *data)
+      |      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:533:6: warning: 'icm20948_gyro_read_dps' defined but not used [-Wunused-function]
+  533 | void icm20948_gyro_read_dps(axises *data)
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:479:6: warning: 'ak09916_init' defined but not used [-Wunused-function]
+  479 | void ak09916_init()
+      |      ^~~~~~~~~~~~
+../Core/Src/main.c:474:6: warning: 'Decryption' defined but not used [-Wunused-function]
+  474 | void Decryption(char compressedData)
+      |      ^~~~~~~~~~
+../Core/Src/main.c:470:6: warning: 'Encryption' defined but not used [-Wunused-function]
+  470 | void Encryption(char compressedData)
+      |      ^~~~~~~~~~
+../Core/Src/main.c:446:6: warning: 'icm20948_init' defined but not used [-Wunused-function]
+  446 | void icm20948_init()
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:405:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  405 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:370:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+  370 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:330:13: warning: 'MX_SPI2_Init' defined but not used [-Wunused-function]
+  330 | static void MX_SPI2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:282:13: warning: 'MX_I2C2_Init' defined but not used [-Wunused-function]
+  282 | static void MX_I2C2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:239:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  239 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:23:43 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:229:10: error: redefinition of 'len'
+  229 |      int len = strlen(buffer);
+      |          ^~~
+../Core/Src/main.c:218:10: note: previous definition of 'len' was here
+  218 |      int len = strlen(buff2);
+      |          ^~~
+../Core/Src/main.c:200:8: warning: unused variable 'buf102' [-Wunused-variable]
+  200 |   char buf102[256];
+      |        ^~~~~~
+../Core/Src/main.c: In function 'Encryption':
+../Core/Src/main.c:481:7: error: 'buffer' undeclared (first use in this function); did you mean 'setbuffer'?
+  481 |  aXor(buffer,compressedData);
+      |       ^~~~~~
+      |       setbuffer
+../Core/Src/main.c:481:7: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:481:14: warning: passing argument 2 of 'aXor' makes pointer from integer without a cast [-Wint-conversion]
+  481 |  aXor(buffer,compressedData);
+      |              ^~~~~~~~~~~~~~
+      |              |
+      |              char
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:31: note: expected 'char *' but argument is of type 'char'
+    8 | void aXor(char buffer[], char compressed[]){
+      |                          ~~~~~^~~~~~~~~~~~
+../Core/Src/main.c: In function 'Decryption':
+../Core/Src/main.c:485:7: error: 'buffer' undeclared (first use in this function); did you mean 'setbuffer'?
+  485 |  aXor(buffer,compressedData);
+      |       ^~~~~~
+      |       setbuffer
+../Core/Src/main.c:485:14: warning: passing argument 2 of 'aXor' makes pointer from integer without a cast [-Wint-conversion]
+  485 |  aXor(buffer,compressedData);
+      |              ^~~~~~~~~~~~~~
+      |              |
+      |              char
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/xor_algo.h:8:31: note: expected 'char *' but argument is of type 'char'
+    8 | void aXor(char buffer[], char compressed[]){
+      |                          ~~~~~^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:24:03 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:229:10: error: redefinition of 'len'
+  229 |      int len = strlen(buffer);
+      |          ^~~
+../Core/Src/main.c:218:10: note: previous definition of 'len' was here
+  218 |      int len = strlen(buff2);
+      |          ^~~
+../Core/Src/main.c:200:8: warning: unused variable 'buf102' [-Wunused-variable]
+  200 |   char buf102[256];
+      |        ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:24:48 **** Incremental Build of configuration Debug for project IMUData ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:200:8: warning: unused variable 'buf102' [-Wunused-variable]
+  200 |   char buf102[256];
+      |        ^~~~~~
+arm-none-eabi-gcc -o "IMUData.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\sthab\Documents\EEE3097S\eee3097s-project-2022\IMU\IMUData\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMUData.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMUData.elf
+ 
+arm-none-eabi-size   IMUData.elf 
+arm-none-eabi-objdump -h -S  IMUData.elf  > "IMUData.list"
+   text	   data	    bss	    dec	    hex	filename
+  47984	    488	   1936	  50408	   c4e8	IMUData.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMUData.list
+ 

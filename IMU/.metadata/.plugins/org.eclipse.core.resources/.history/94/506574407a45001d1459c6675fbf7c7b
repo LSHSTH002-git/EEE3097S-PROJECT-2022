@@ -226,9 +226,9 @@ int main(void)
 		debugPrintln(&huart1,"-------------------------------Decryption -------------------------");
 		//call the Decryption function, input vuyisa's compressed data
 
-	    int len2 = strlen(buffer);
+	    int len = strlen(buffer);
 
-	    for(int i = 0; i< len2; i++){
+	    for(int i = 0; i< len; i++){
 	        buffer[i] = buffer[i] ^ xorKey;
 
 	    }
