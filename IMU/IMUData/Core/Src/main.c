@@ -24,9 +24,13 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "icm20948.h"
 #include "xor_algo.h"
+#include <stdlib.h>
+#include <ctype.h>
+#include <errno.h>
+#include <time.h>
+#include <unistd.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -68,6 +72,10 @@ static void MX_I2C2_Init(void);
 static void MX_SPI2_Init(void);
 static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
+
+void Decompression (char *Out_size, const unsigned char *Compressed_size, unsigned CompressedLength);
+void Compression(unsigned char *sizeOut, const char *Message_size);
+
 
 static void cs_high();
 static void cs_low();
@@ -144,8 +152,7 @@ void icm20948_accel_full_scale_select(accel_full_scale full_scale);
 void debugPrintln(UART_HandleTypeDef *uart_handle,
 				  char _out[])
 {
-	HAL_UART_Transmit(uart_handle, (uint8_t *)_out,
-					  strlen(_out), 60);
+	HAL_UART_Transmit(uart_handle, (uint8_t *)_out, strlen(_out),  60);
 	char newline[2] = "\r\n";
 	HAL_UART_Transmit(uart_handle, (uint8_t *)newline, 2, 10);
 }
@@ -198,27 +205,29 @@ int main(void)
 	{
 		char buf101[256];
 		char buf102[256];
-		char buff2[512];
-		char buffer[512];
+		char buff2[256];
+		char buffer[256];
 
 		icm20948_gyro_read_dps(&my_gyro);
 		icm20948_accel_read_g(&my_accel);
 
-		debugPrintln(&huart1,"-------------------------------IMU Data-----------------------------");
+		debugPrintln(&huart1,"------------------------------ICM-20948 Data----------------------");
 
 		sprintf(buff2,"\r\n Accelerometer Reading : X:%f Y:%f Z:%f\n",my_accel.x,my_accel.y,my_accel.z);
 		sprintf(buf101,"\r\n Gyroscope Reading     : X:%f Y:%f Z:%f\n",my_gyro.x,my_gyro.y,my_gyro.z);
 		strcat(buff2,buf101);
 		debugPrintln(&huart1,(char *)buff2);
 		debugPrintln(&huart1,"-------------------------------------------------------------------");
+
 		debugPrintln(&huart1,"-------------------------------Encryption -------------------------");
 		//call the encryption function, input vuyisa's compressed data
+
 	    char xorKey = 'A';
 
 	    int len = strlen(buff2);
 
 	    for(int i = 0; i< len; i++){
-	        buffer[i] = buff2[i] ^ xorKey;
+	        buffer[i] = buff2[i] ^1 ;
 
 	    }
 	    debugPrintln(&huart1,buffer);
@@ -229,7 +238,7 @@ int main(void)
 	    int len2 = strlen(buffer);
 
 	    for(int i = 0; i< len2; i++){
-	        buffer[i] = buffer[i] ^ xorKey;
+	        buffer[i] = buffer[i] ^ 2;
 
 	    }
 	    debugPrintln(&huart1,buffer);
@@ -453,6 +462,53 @@ static float accel_scale_factor;
 
 
 /* Main Functions */
+
+void Compression(unsigned char *sizeOut, const char *Message_size) {
+
+	unsigned long long Buffer = 0;
+	char Bits = 0;
+
+	while (*Message_size != 0) {
+		Buffer |= (unsigned long long)(*Message_size++) << Bits;
+		Bits += 7;
+		if (Bits == 7 * 8) {
+			while (Bits > 0) {
+				*sizeOut++ = Buffer;
+				Buffer >>= 8;
+				Bits -= 8;
+			}
+			Bits = 0;
+			Buffer = 0;
+		}
+	}
+	while (Bits > 0) {
+		*sizeOut++ = Buffer;
+		Buffer >>= 8;
+		Bits -= 8;
+	}
+}
+
+void Decompression (char *Out_size, const unsigned char *Compressed_size, unsigned CompressedLength) {
+
+	unsigned long long Buffer = 0;
+	char Bits = 0;
+	while (CompressedLength) {
+		while (CompressedLength && Bits < 7 * 8) {
+			Buffer |= (unsigned long long)*Compressed_size++ << Bits;
+			Bits += 8;
+			--CompressedLength;
+		}
+		while (Bits > 0) {
+			*Out_size++ = Buffer & 0x7F;
+			Buffer >>= 7;
+			Bits -= 7;
+		}
+
+		Bits = 0;
+		Buffer = 0;
+	}
+}
+
 void icm20948_init()
 {
 	while (!icm20948_who_am_i());

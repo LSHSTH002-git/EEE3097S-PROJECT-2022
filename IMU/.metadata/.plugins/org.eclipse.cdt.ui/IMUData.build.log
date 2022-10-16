@@ -1,10 +1,10 @@
-16:11:35 **** Incremental Build of configuration Debug for project IMUData ****
+16:38:49 **** Incremental Build of configuration Debug for project IMUData ****
 make -j16 all 
 arm-none-eabi-size   IMUData.elf 
    text	   data	    bss	    dec	    hex	filename
-  47996	    488	   1936	  50420	   c4f4	IMUData.elf
+  47984	    488	   1936	  50408	   c4e8	IMUData.elf
 Finished building: default.size.stdout
  
 
-16:11:35 Build Finished. 0 errors, 0 warnings. (took 406ms)
+16:38:49 Build Finished. 0 errors, 0 warnings. (took 370ms)
 
