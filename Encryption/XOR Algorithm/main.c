@@ -15,10 +15,9 @@
 int main()
 {
 
-    char line [1000000];
-    char buffer[1000000]; //encryption buffer
-    char source[1000000];
-    char buffer2[1000000];
+    char line [1000];
+    char buffer[1000]; //encryption buffer
+
 
     FILE *_open;
     _open = fopen("new.txt","r");
@@ -27,8 +26,7 @@ int main()
     {
     while(!feof(_open))
     {
-        fgetc(_open);
-        strcat(source, fgets(line,1000000,_open));
+        fgets(line,1000,_open);
     }
     fclose(_open);
     }
@@ -40,11 +38,11 @@ int main()
     //Encryption.
 
     char xorKey = 'A';
-    int len = strlen(source);
+    int len = strlen(line);
 
     for(int i=0;i<len;i++)
     {
-        buffer[i] = source[i]^xorKey;
+        buffer[i] = line[i]^xorKey;
     }
     //send the encrypted data to a txt file.
     FILE *_send;
@@ -58,11 +56,11 @@ int main()
     //Random keys for demonstration purposes.
     for(int i=0;i<len;i++)
     {
-        buffer2[i] = buffer[i]^xorKey;
+        buffer[i] = buffer[i]^xorKey;
     }
     //send the encrypted data to a txt file.
     FILE *_send2;
 
     _send2 = fopen("Decrypted.txt","w");
-    fprintf(_send2,buffer2);
+    fprintf(_send2,buffer);
 }
