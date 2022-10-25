@@ -6,11 +6,11 @@ The System was designed for a device called SHARC BUOY which is used to collect 
 
 ## What you need to get started with this project
 
-### stm32f051r8t6
-### ICM-20948
-### STM32CubeIDE
-### need to know basic python programming language
-### need to know basic C programming language
+##### stm32f051r8t6
+##### ICM-20948
+##### STM32CubeIDE
+##### need to know basic python programming language
+##### need to know basic C programming language
 
 
 ## Project folders
@@ -27,13 +27,13 @@ to run the file you need to follow these steps
     4.2 to decompress run "./huffman -d nameOfThecompressedFile nameOfTheOutput"
     once the data is decompressed the program will prompt to enter two files to be compared which you might you to compare the original data to the decompressed data
 
-- Also the folder contains uartData.py which is used to read data from the serial port of the pc, to run this just type "python uartData.py" the enter now it should create a file called data.txt on the folder which will be used to store data when there is date in the serial port.
+- Also the folder contains uartData.py which is used to read data from the serial port(you might want to open the file and change the communication port to the the one you are using) of the pc, to run this just type "python uartData.py" the enter now it should create a file called data.txt on the folder which will be used to store data when there is date in the serial port.
 
 ### Datasheets
- theis folder contains all the documents that were used in the project.
+ This folder contains all the documents that were used in the project.
 
 ### Encryption 
-This folder has three subfolders which containes all the file that were used to ecrypt and decrypt data but the subfolder of interest is XOR Algorithm, this subfolder contained main.c which encryt and decrypt data to run this file you need to create a file with content that you want to encrypt. 
+This folder has three subfolders which contains all the file that were used to encrypt and decrypt data but the subfolder of interest is XOR Algorithm, this subfolder contains main.c which encryt and decrypt data to run this file you need to create a file with a content that you wish to encrypt. 
 
 - run "gcc -o main main.c" on the command line
 - run "./main
@@ -51,7 +51,7 @@ this will prompt you to enter the paths to the files you wish to compare.
 ### IMU folder
 
 Contains the code used to read data from the ICM-20948 sensor using the STM32F0
-Go to IMUDATA.ioc to see how the bins are configures and connect a circuit accordingly.
+Go to IMUDATA.ioc to see how the bins are configured and build a circuit accordingly.
 
 ### Paper design folder
 
