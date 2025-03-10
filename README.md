@@ -61,7 +61,7 @@ Contains a pdf Document showin the analysis of the requirements of the project
 Should you find yourself browsing through this git repo, feel free to use the codes however you want but do not use it for monetary benefits and do not push any changes to the git repo.
 
 ## Authors and acknowledgment
-S'THA AND VEE
+S'THABISO AND VEE
 
 ## Project status
 The project is completed but might come back to improve it.
